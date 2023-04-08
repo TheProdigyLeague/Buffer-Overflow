@@ -1,9 +1,11 @@
 EyeWitness
 ======
 
-EyeWitness is designed to take screenshots of websites provide some server header info, and identify default credentials if known.
+EyeWitness is designed to take screenshots of websites. 
+Provide some server header info, and identify default credentials if known.
 
-EyeWitness is designed to run on Kali Linux. It will auto detect the file you give it with the -f flag as either being a text file with URLs on each new line, nmap xml output, or nessus xml output. The --timeout flag is completely optional, and lets you provide the max time to wait when trying to render and screenshot a web page.
+EyeWitness is designed to run on Kali Linux. 
+It will auto-detect the file you give it with -f flag as either being a text file with URLs on each new line, nmap xml output, or nessus xml output. The --timeout flag is completely optional, and lets you provide the max time to wait when trying to render and screenshot a web page.
 
 A complete usage guide which documents EyeWitness features and its typical use cases is available here - https://www.christophertruncer.com/eyewitness-usage-guide/
 
@@ -30,9 +32,9 @@ A complete usage guide which documents EyeWitness features and its typical use c
 ```
 
 ### Docker
-Now you can execute EyeWitness in a docker container and prevent you from install unnecessary dependencies in your host machine.
+Now you can execute EyeWitness in a docker container. Preventing you from installing unnecessary dependencies onto your host machine.
 
-**Note:** execute *docker run* with the folder path in the host which hold your results (**/path/to/results**)  
+**Note:** execute *docker run* with the folder path in the host which holds your results (**/path/to/results**)  
 **Note2:** in case you want to scan urls from a file, make sure you put it in the volume folder (if you put *urls.txt* in */path/to/results*, then the argument should be *-f /tmp/EyeWitness/urls.txt*)
 
 ##### Usage
