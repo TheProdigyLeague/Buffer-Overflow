@@ -1,9 +1,12 @@
+[!]
 language: python
 python:
-  - "2.7"
+  - "3.0"
+[-] 
 before_install:
   - cd setup
   - sudo ./setup.sh
+[+]
 script:
   - "cd .."
   - "sudo ./EyeWitness.py --single www.google.com"
